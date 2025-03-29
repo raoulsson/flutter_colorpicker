@@ -1,4 +1,4 @@
-library flutter_colorpicker;
+library;
 
 export 'src/colorpicker.dart';
 export 'src/material_picker.dart';

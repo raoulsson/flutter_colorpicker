@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.0.4]
+
+- Updated dependencies to the latest versions.
+
 ## [1.0.3]
 
 - [#68](https://github.com/mchome/flutter_colorpicker/issues/68) Fix material color picker outline for white color.

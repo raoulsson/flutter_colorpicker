@@ -1,6 +1,6 @@
 /// Blocky Color Picker
 
-library block_colorpicker;
+library;
 
 import 'package:flutter/material.dart';
 import 'utils.dart';
@@ -81,14 +81,14 @@ Widget _defaultItemBuilder(Color color, bool isCurrentColor, void Function() cha
 // The blocky color picker you can alter the layout and shape.
 class BlockPicker extends StatefulWidget {
   const BlockPicker({
-    Key? key,
+    super.key,
     required this.pickerColor,
     required this.onColorChanged,
     this.availableColors = _defaultColors,
     this.useInShowDialog = true,
     this.layoutBuilder = _defaultLayoutBuilder,
     this.itemBuilder = _defaultItemBuilder,
-  }) : super(key: key);
+  });
 
   final Color? pickerColor;
   final ValueChanged<Color> onColorChanged;
@@ -135,14 +135,14 @@ class _BlockPickerState extends State<BlockPicker> {
 // The blocky color picker you can alter the layout and shape with multiple choice.
 class MultipleChoiceBlockPicker extends StatefulWidget {
   const MultipleChoiceBlockPicker({
-    Key? key,
+    super.key,
     required this.pickerColors,
     required this.onColorsChanged,
     this.availableColors = _defaultColors,
     this.useInShowDialog = true,
     this.layoutBuilder = _defaultLayoutBuilder,
     this.itemBuilder = _defaultItemBuilder,
-  }) : super(key: key);
+  });
 
   final List<Color>? pickerColors;
   final ValueChanged<List<Color>> onColorsChanged;
